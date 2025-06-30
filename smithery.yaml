@@ -1,0 +1,19 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'douyin-mcp-server', args: [], env: { DOUYIN_API_KEY: config.douyinApiKey } })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - douyinApiKey
+    properties:
+      douyinApiKey:
+        type: string
+        description: API key for SiliconFlow or other transcription service
+  exampleConfig:
+    douyinApiKey: sk-your-api-key-here

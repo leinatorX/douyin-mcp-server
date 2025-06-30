@@ -2,6 +2,7 @@
 
 [![PyPI version](https://badge.fury.io/py/douyin-mcp-server.svg)](https://badge.fury.io/py/douyin-mcp-server)
 [![Python version](https://img.shields.io/pypi/pyversions/douyin-mcp-server.svg)](https://pypi.org/project/douyin-mcp-server/)
+[![smithery badge](https://smithery.ai/badge/@leinatorX/douyin-mcp-server)](https://smithery.ai/server/@leinatorX/douyin-mcp-server)
 
 一个基于 Model Context Protocol (MCP) 的服务器，可以从抖音分享链接下载无水印视频，提取音频并转换为文本。
 
@@ -19,6 +20,14 @@
 
 ```bash
 uvx douyin-mcp-server
+```
+
+### 安装 via Smithery
+
+To install douyin-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@leinatorX/douyin-mcp-server):
+
+```bash
+npx -y @smithery/cli install @leinatorX/douyin-mcp-server --client claude
 ```
 
 ### 使用 pip 安装
